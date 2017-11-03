@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" debug="false">
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are by default assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="debug">
+		<appender-ref ref="STDOUT" />
+	</root>
+	<logger name="org.springframework" level="WARN" />
+	<logger name="org.springframework.web.servlet.mvc" level="WARN" />
+	<logger name="org.apache.ibatis.io" level="WARN" />
+	<logger name="org.mybatis.spring.mapper.ClassPathMapperScanner" level="WARN" />
+	<logger name="org.mybatis.spring.SqlSessionFactoryBean" level="WARN" />
+	<logger name="org.quartz.impl.jdbcjobstore" level="WARN" />
+	<logger name="org.quartz.simpl.PropertySettingJobFactory" level="WARN" />
+	<logger name="org.quartz.core.QuartzSchedulerThread" level="WARN" />
+	<logger name="com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource" level="WARN" />
+	<logger name="org.quartz.core.JobRunShell" level="WARN" />
+
+	<!--<root>-->
+		<!--<level value="error" />-->
+		<!--<appender-ref ref="console" />-->
+	<!--</root>-->
+</configuration>

@@ -15,6 +15,7 @@ import java.util.Set;
  */
 @Component
 public class Main {
+
     @Autowired
     private Scheduler scheduler;
 
